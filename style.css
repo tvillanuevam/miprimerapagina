@@ -6,7 +6,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.greeting {
+    background-color: #d9534f;
+}
 ol,
 ul {
     list-style: none;
