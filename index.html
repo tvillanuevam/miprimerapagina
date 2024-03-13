@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web </title>
+    <script src="https://kit.fontawesome.com/8d6b79b36f.js"
+    crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />  
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><i class="fa-brands fa-wolf-pack-battalion"></i></a>
+            <nav>
+                <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+                <ul class="menu">
+                    <li> Inicio</li>
+                    <li> Acerca de mi </li>
+                    <li> Trabajos </li>
+                    <li> Servicios </li>
+                    <li> Contacto </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="seccion-principal">
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2> Acerca de Mi </h2>
+                    <p class="parrafo1">
+                        Bienvenido a mi página! Aqui aprenderas mas sobre mi.
+                    </p>
+                    <p class="parrafo2">
+                        Me llamo Tonny Villanueva, nací en Lima, Peru y vivo en el distrito de san juan de lurigancho. Me gusta bailar, escuchar musica. Me encantaria aprender a programar para poder ayudar a las personas a mostrar lo que hacen y ganar mucha plata con eso. A lo acuña xd.
+                    </p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="imagenes/leon1.jpg" alt="imagen portada">
+                </div>
+            </section>
+            <section class="seccion-2">
+                <img src="imagenes/profesional.jpg" alt="imagen de carrusel">
+            </section>
+        </main>
+        <H2> Mis trabajos </H2>
+        <section id="trabajos">
+            <div class="trabajo-1">
+                <div>
+                    <h3> Mesero </h3>
+                </div>
+                <div>
+                    <img src="imagenes/inversiones.jpg" alt="filosofia">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vitae suscipit odio voluptate numquam, fugit voluptates ad labore rerum consectetur aliquam voluptatum. Asperiores molestias modi deserunt. Dolorem explicabo libero quam!</p>
+                </div>
+            </div>    
+            <div class="trabajo-2">
+                <div>
+                    <h3> Asesor de ventas </h3>
+                </div>
+                <div>
+                    <img src="imagenes/inversiones.jpg" alt="vendedor">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repudiandae exercitationem quisquam accusantium itaque quo adipisci omnis nam, perspiciatis quos libero, soluta saepe. Nihil magni quis, incidunt officiis tempora iste.
+                </p>
+            </div>
+            <div class="trabajo-3">
+                <div>
+                    <h3> Formador </h3>
+                </div>
+                <div>
+                    <img src="imagenes/inversiones.jpg" alt="zzz"> 
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptas fugiat odit, repellendus odio dolor aliquid natus laborum quia aut quos officiis deserunt excepturi temporibus. Non ipsa id ratione consequuntur!
+                    </p>
+                </div>
+            </div>    
+            </div>
+        </section>
+        <div class="formulario1">
+                <form action method="get" class="formulario" id="form">
+                    <div class="form-row">
+                        <label for="nombre">nombre</label>
+                        <input id="nombre" name="nombre" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="pepe@gmail.com">
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </div>
+                        <div class="form-row">
+                            <button>Enviar</button>
+                        </div>
+                    </form>
+                    <p id="alertas">El nombre debe contener mas de 4 caracteres
+                    </p>
+            </div>
+        <footer>    
+            <p>Derechos de autor © 2024 Mi Sitio Web</p>
+            <a href="index.html">Políticas de Privacidad</a>
+            <a href="index.html">Términos de Servicio</a>
+        
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

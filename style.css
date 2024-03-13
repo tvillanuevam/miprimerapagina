@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    justify-content: center;
+    align-items: center;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    display: flex;
+    background-color: #35495e;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+header a i {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.1em;
+}
+
+header nav ul li {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li:hover {
+    background-color: #2c3e50;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.seccion-1 {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+.seccion-1 .acerca-de {
+    flex: 2;
+    margin-right: 2em;
+}
+
+.seccion-1 .acerca-de h2 {
+    font-size: 2em;
+    color: #35495e; 
+}
+
+.seccion-1 .acerca-de p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+.seccion-1 .acerca-imagen img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.seccion-2 img {
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+#trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em 0;
+}
+
+.trabajo-1, .trabajo-2, .trabajo-3 {
+    flex: 0 1 calc(30.333% - 1em);
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trabajo-1 h3, .trabajo-2 h3, .trabajo-3 h3 {
+    font-size: 1.5em;
+    color: #35495e;
+}
+
+.trabajo-1 p, .trabajo-2 p, .trabajo-3 p {
+    color: #666; 
+}
+
+footer {
+    background-color: #35495e;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    margin-right: 1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+#check {
+    display: none;
+}
+.checkbtn {
+    font-size: 25px;
+    color: #f5f5f5;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 30px auto; /* Centra el formulario horizontalmente */
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+label {
+    cursor: default;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-row textarea {
+    min-height: 120px;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #35495e;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+#alertas {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #d9534f; /* Color rojo para las alertas */
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .seccion-1 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .acerca-de {
+        width: 90%;
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+
+    .acerca-imagen {
+        width: 100%;
+    }
+
+    .acerca-imagen img {
+        width: 100%; 
+        border-radius: 0.5em;
+    }
+    .checkbtn {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2c3e50;
+        text-align: center;
+    
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #trabajos .trabajo-1, 
+    #trabajos .trabajo-2, 
+    #trabajos .trabajo-3 {
+        flex-basis: 100%; 
+        margin: 0;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+}
